@@ -8,8 +8,8 @@
     "sass": "^1.58.0"
   },
   "scripts": {
-    "build": "esbuild app/javascript/application.js --bundle --minify --sourcemap --outfile=public/packs/app.js",
-    "build:css": "sass app/assets/stylesheets/application.sass.scss public/packs/app.css"
+    "build": "esbuild app/javascript/application.js --bundle --minify --sourcemap --outfile=app/assets/builds/application.js",
+    "build:css": "sass app/assets/stylesheets/application.sass.scss app/assets/builds/app.css"  
   }
   
 }
