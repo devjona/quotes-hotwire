@@ -8,10 +8,6 @@ class QuotesTest < ApplicationSystemTestCase
 
   test "Show a quote" do
     visit quotes_path
-    # debugger
-    # click_link @quote.name
-    # debugger
-    # assert_selector "h1", text: @quote.name
     assert_text @quote.name
   end
 
