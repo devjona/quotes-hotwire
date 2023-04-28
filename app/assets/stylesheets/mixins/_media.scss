@@ -1,6 +1,11 @@
 @mixin media($query) {
-  @if $query ==tabletAndUp {
+  @if $query == tabletAndUp {
     @media (min-width: 50rem) {
+      @content;
+    }
+  }
+  @if $query == mobileAndUp {
+    @media (min-width: 30rem) {
       @content;
     }
   }
