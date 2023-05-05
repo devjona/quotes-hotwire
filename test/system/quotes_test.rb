@@ -20,7 +20,8 @@ class QuotesTest < ApplicationSystemTestCase
 
     # We should still be on the Quotes index page
     assert_selector "h1", text: "Quotes"
-    click_on "Create Quote"
+    # click_on "Create Quote"
+    click_on I18n.t("helpers.submit.quote.create")
 
     assert_selector "h1", text: "Quotes"
     assert_text "Capybara quote"
